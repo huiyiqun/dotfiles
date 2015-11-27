@@ -7,3 +7,4 @@ rm -rf ~/.tmux/plugins/ && git clone https://github.com/tmux-plugins/tpm ~/.tmux
 
 # link configurations
 ln -sf $CWD/tmux.conf ~/.tmux.conf
+ln -sf $CWD/gitconfig ~/.gitconfig
