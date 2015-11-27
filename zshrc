@@ -13,15 +13,13 @@ ENABLE_CORRECTION="true"
 # Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
 # Format of command execution timestamp shown in the history command output.
-# HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git)
+# Autostart and autoreconnect tmux
+ZSH_TMUX_AUTOSTART=true
+
+plugins=(git tmux)
 
 # User configuration
 
