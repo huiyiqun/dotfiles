@@ -40,3 +40,4 @@ alias pac="sudo pacman"
 alias yat="yaourt"
 alias up="yaourt -Syua --noconfirm"
 alias vim=nvim
+alias tmux="tmux -2"
