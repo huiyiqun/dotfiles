@@ -29,3 +29,4 @@ filetype plugin indent on    " required
 
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme = "solarized"
