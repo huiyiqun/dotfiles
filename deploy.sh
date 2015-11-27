@@ -11,3 +11,4 @@ test -d ~/.oh-my-zsh || git clone --depth=1 https://github.com/robbyrussell/oh-m
 # link configurations
 ln -sf $CWD/tmux.conf ~/.tmux.conf
 ln -sf $CWD/gitconfig ~/.gitconfig
+ln -sf $CWD/zshrc ~/.zshrc
