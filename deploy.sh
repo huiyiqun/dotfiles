@@ -15,4 +15,4 @@ test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundl
 ln -sf $CWD/tmux.conf ~/.tmux.conf
 ln -sf $CWD/gitconfig ~/.gitconfig
 ln -sf $CWD/zshrc ~/.zshrc && touch ~/.path.local
-mkdir -p ~/.config/nvim && ln -sf $CWD/nvimrc ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim && ln -sf $CWD/nvimrc ~/.config/nvim/init.vim && touch ~/.nvimrc.local
