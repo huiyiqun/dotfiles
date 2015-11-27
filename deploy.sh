@@ -16,3 +16,4 @@ ln -sf $CWD/tmux.conf ~/.tmux.conf
 ln -sf $CWD/gitconfig ~/.gitconfig
 ln -sf $CWD/zshrc ~/.zshrc && touch ~/.path.local
 mkdir -p ~/.config/nvim && ln -sf $CWD/nvimrc ~/.config/nvim/init.vim && touch ~/.nvimrc.local
+ln -sf $CWD/npmrc ~/.npmrc
