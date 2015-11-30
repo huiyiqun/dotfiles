@@ -39,3 +39,5 @@ let g:airline_powerline_fonts = 1
 autocmd BufWritePost *.py call Flake8()
 
 source ~/.nvimrc.local
+
+set number
