@@ -42,4 +42,5 @@ autocmd BufWritePost *.py call Flake8()
 
 source ~/.nvimrc.local
 
+" show line number
 set number
