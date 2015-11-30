@@ -44,3 +44,6 @@ source ~/.nvimrc.local
 
 " show line number
 set number
+
+" set leader character
+let mapleader = ","
