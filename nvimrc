@@ -17,6 +17,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
