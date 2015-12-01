@@ -15,6 +15,7 @@ Plugin 'tpope/vim-sensible.git'
 Plugin 'vim-scripts/Drawit'
 Plugin 'othree/yajs.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
