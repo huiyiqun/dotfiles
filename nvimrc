@@ -15,6 +15,9 @@ Plugin 'tpope/vim-sensible.git'
 Plugin 'vim-scripts/Drawit'
 Plugin 'othree/yajs.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
@@ -35,4 +38,13 @@ filetype plugin indent on    " required
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
 
+" run Flake8 check every time I write a Python file
+autocmd BufWritePost *.py call Flake8()
+
 source ~/.nvimrc.local
+
+" show line number
+set number
+
+" set leader character
+let mapleader = ","
