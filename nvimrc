@@ -15,7 +15,6 @@ Plugin 'tpope/vim-sensible.git'
 Plugin 'vim-scripts/Drawit'
 Plugin 'othree/yajs.vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
@@ -38,8 +37,8 @@ filetype plugin indent on    " required
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
 
-" run Flake8 check every time I write a Python file
-autocmd BufWritePost *.py call Flake8()
+" run SyntasticCheck check every time I write a file
+autocmd BufWritePost * call SyntasticCheck()
 
 source ~/.nvimrc.local
 
@@ -48,3 +47,12 @@ set number
 
 " set leader character
 let mapleader = ","
+
+" set syntastic (populate warning msg to statusline)
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
