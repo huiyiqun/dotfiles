@@ -18,7 +18,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Autostart and autoreconnect tmux
 ZSH_TMUX_AUTOSTART=true
-TERM=xterm-256color
+TERM=screen-256color
 
 plugins=(git tmux)
 
