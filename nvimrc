@@ -17,6 +17,8 @@ Plugin 'othree/yajs.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'hsanson/vim-android'
+Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'scrooloose/syntastic'
 Plugin 'mbbill/fencview'
 
@@ -57,6 +59,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_java_javac_config_file_enabled = 1
 
 " keep an undo file (undo changes after closing)
 set undofile
@@ -69,3 +72,10 @@ autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   execute "normal! g`\"" |
   \ endif
+
+" set javacomplete2
+autocmd FileType java set omnifunc=javacomplete#Complete
+
+if filereadable("AndroidManifest.xml")
+    let g:JavaComplete_SourcesPath = "target/generated-sources/r"
+endif
