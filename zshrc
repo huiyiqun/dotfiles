@@ -20,7 +20,7 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_TMUX_AUTOSTART=true
 TERM=screen-256color
 
-plugins=(git tmux)
+plugins=(git tmux systemd)
 
 # User configuration
 
