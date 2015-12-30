@@ -34,6 +34,8 @@ export LANG=en_US.UTF-8
 # Editor
 export EDITOR='nvim'
 
+export PATH=$HOME/bin:$PATH
+
 # Aliases
 alias pac="sudo pacman"
 alias yat="yaourt"
