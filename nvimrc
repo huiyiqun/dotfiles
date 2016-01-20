@@ -22,6 +22,7 @@ Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'scrooloose/syntastic'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
+Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
