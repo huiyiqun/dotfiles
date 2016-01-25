@@ -85,3 +85,8 @@ endif
 " navigation within single line
 map j gj
 map k gk
+
+" configuration about tab
+set expandtab
+set tabstop=4
+set shiftwidth=4
