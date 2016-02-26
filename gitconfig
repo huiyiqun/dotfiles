@@ -12,3 +12,5 @@
 	required = true
 [credential]
 	helper = cache --timeout=60
+[pull]
+	rebase = true
