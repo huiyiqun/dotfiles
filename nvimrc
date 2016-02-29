@@ -19,10 +19,12 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
 " Plugin 'hsanson/vim-android'
 Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,7 +45,7 @@ filetype plugin indent on    " required
 let g:airline_powerline_fonts = 1
 
 " run SyntasticCheck check every time I write a file
-autocmd BufWritePost * call SyntasticCheck()
+"autocmd BufWritePost * call SyntasticCheck()
 
 source ~/.nvimrc.local
 
@@ -54,14 +56,14 @@ set number
 let mapleader = ","
 
 " set syntastic (populate warning msg to statusline)
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_java_javac_config_file_enabled = 1
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_java_javac_config_file_enabled = 1
 
 " keep an undo file (undo changes after closing)
 set undofile
