@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="bureau"
+ZSH_THEME="ys"
 
 # No update
 DISABLE_AUTO_UPDATE="true"
