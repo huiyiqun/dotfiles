@@ -14,3 +14,8 @@
 	helper = cache --timeout=60
 [pull]
 	rebase = true
+[sendemail]
+    smtpencryption = tls
+    smtpserver = smtp.gmail.com
+    smtpuser = huiyiqun@gmail.com
+    smtpserverport = 587
