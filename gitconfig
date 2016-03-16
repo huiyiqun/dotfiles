@@ -15,7 +15,7 @@
 [pull]
 	rebase = true
 [sendemail]
-    smtpencryption = tls
-    smtpserver = smtp.gmail.com
-    smtpuser = huiyiqun@gmail.com
-    smtpserverport = 587
+    smtpEncryption = tls
+    smtpServer = smtp.gmail.com
+    smtpUser = huiyiqun@gmail.com
+    smtpServerPort = 587
