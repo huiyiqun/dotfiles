@@ -19,13 +19,16 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
 " Plugin 'hsanson/vim-android'
 Plugin 'artur-shaik/vim-javacomplete2'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
 Plugin 'vim-scripts/jade.vim'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'udalov/kotlin-vim'
+" Plugin 'davidhalter/jedi-vim'
+Plugin 'jmcantrell/vim-virtualenv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,8 +65,8 @@ let mapleader = ","
 "set statusline+=%*
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 "let g:syntastic_java_javac_config_file_enabled = 1
 
 " keep an undo file (undo changes after closing)
@@ -79,11 +82,11 @@ autocmd BufReadPost *
   \ endif
 
 " set javacomplete2
-autocmd FileType java set omnifunc=javacomplete#Complete
+"autocmd FileType java set omnifunc=javacomplete#Complete
 
-if filereadable("AndroidManifest.xml")
-    let g:JavaComplete_SourcesPath = "target/generated-sources/r"
-endif
+"if filereadable("AndroidManifest.xml")
+    "let g:JavaComplete_SourcesPath = "target/generated-sources/r"
+"endif
 
 " navigation within single line
 map j gj
@@ -93,3 +96,9 @@ map k gk
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+let g:ycm_path_to_python_interpreter = "/usr/bin/python"
+
+" key bind for YCM
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>d :YcmCompleter GetDoc<CR>
