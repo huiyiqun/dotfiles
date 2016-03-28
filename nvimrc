@@ -102,3 +102,5 @@ let g:ycm_path_to_python_interpreter = "/usr/bin/python"
 " key bind for YCM
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
+
+let g:ycm_confirm_extra_conf = 0
