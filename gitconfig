@@ -19,3 +19,7 @@
 	smtpServer = smtp.gmail.com
 	smtpUser = huiyiqun@gmail.com
 	smtpServerPort = 587
+[color]
+	ui = auto
+[core]
+	editor = nvim
