@@ -104,3 +104,5 @@ nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
 
 let g:ycm_confirm_extra_conf = 0
+
+let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
