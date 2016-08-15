@@ -39,5 +39,5 @@ export PATH=$HOME/bin:$PATH
 # Aliases
 alias pac="sudo pacman"
 alias yat="yaourt"
-alias up="yaourt -Syua --noconfirm"
+alias up="yaourt -Syua --noconfirm --devel"
 alias vim=nvim
