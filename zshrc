@@ -41,3 +41,7 @@ alias pac="sudo pacman"
 alias yat="yaourt"
 alias up="yaourt -Syua --noconfirm --devel"
 alias vim=nvim
+
+# Configuration for golang
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
