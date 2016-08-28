@@ -29,6 +29,11 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'udalov/kotlin-vim'
 " Plugin 'davidhalter/jedi-vim'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'kylef/apiblueprint.vim'
+Plugin 'othree/html5.vim'
+Plugin 'alvan/vim-closetag.git'
+Plugin 'embear/vim-localvimrc'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
