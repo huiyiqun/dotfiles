@@ -108,6 +108,11 @@ set shiftwidth=4
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
 
+" disable YCM for specific filetype
+let g:ycm_filetype_blacklist = {
+    \ 'html' : 1,
+    \}
+
 let g:ycm_confirm_extra_conf = 0
 
 let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
