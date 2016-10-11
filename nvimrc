@@ -34,6 +34,7 @@ Plugin 'othree/html5.vim'
 Plugin 'alvan/vim-closetag.git'
 Plugin 'embear/vim-localvimrc'
 Plugin 'fatih/vim-go'
+Plugin 'huiyiqun/elvish.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
