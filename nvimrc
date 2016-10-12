@@ -9,32 +9,37 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" style
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'tpope/vim-sensible.git'
+
+" util
 Plugin 'vim-scripts/Drawit'
-Plugin 'othree/yajs.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
-" Plugin 'hsanson/vim-android'
-Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'scrooloose/syntastic'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
-Plugin 'vim-scripts/jade.vim'
-Plugin 'pearofducks/ansible-vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
+
+" language
+Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-sensible.git'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'othree/yajs.vim'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'vim-scripts/jade.vim'
 Plugin 'udalov/kotlin-vim'
-" Plugin 'davidhalter/jedi-vim'
-Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'othree/html5.vim'
 Plugin 'alvan/vim-closetag.git'
-Plugin 'embear/vim-localvimrc'
 Plugin 'fatih/vim-go'
 Plugin 'huiyiqun/elvish.vim'
+
+" config
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'embear/vim-localvimrc'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
