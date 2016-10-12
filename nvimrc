@@ -117,3 +117,6 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_confirm_extra_conf = 0
 
 let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
+
+" configure nerdcommenter
+let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
