@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " style
 Plugin 'bling/vim-airline'
-Plugin 'edkolev/tmuxline.vim'
+"Plugin 'edkolev/tmuxline.vim'
 
 " util
 Plugin 'vim-scripts/Drawit'
@@ -19,7 +19,7 @@ Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
 
 " language
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sensible.git'
 Plugin 'pearofducks/ansible-vim'
