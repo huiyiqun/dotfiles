@@ -123,3 +123,6 @@ let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
 
 " configure nerdcommenter
 let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
+
+" set shell for elvish is not posix
+set shell=/usr/bin/sh
