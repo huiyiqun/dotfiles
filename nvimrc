@@ -106,7 +106,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-"let g:ycm_path_to_python_interpreter = "/usr/bin/python"
+let g:ycm_path_to_python_interpreter = "python"
 
 " key bind for YCM
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
