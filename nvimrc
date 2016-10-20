@@ -17,6 +17,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'parkr/vim-jekyll'
 
 " language
 Plugin 'scrooloose/syntastic'
