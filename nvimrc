@@ -128,11 +128,3 @@ let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
 " set shell for elvish is not posix
 set shell=/usr/bin/sh
 
-let g:jekyll_post_template =  [
-  \ '---',
-  \ 'layout: post',
-  \ 'title: "JEKYLL_TITLE"',
-  \ 'date: "JEKYLL_DATE"',
-  \ 'comments: true',
-  \ '---',
-  \ '']
