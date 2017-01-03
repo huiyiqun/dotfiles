@@ -20,7 +20,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-fswitch'
 
 " language
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sensible.git'
 Plugin 'pearofducks/ansible-vim'
