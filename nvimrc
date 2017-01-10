@@ -35,6 +35,7 @@ Plugin 'alvan/vim-closetag.git'
 Plugin 'fatih/vim-go'
 Plugin 'huiyiqun/elvish.vim'
 Plugin 'posva/vim-vue'
+Plugin 'digitaltoad/vim-pug'
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
