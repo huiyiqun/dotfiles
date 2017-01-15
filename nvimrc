@@ -18,6 +18,7 @@ Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-fswitch'
+Plugin 'KabbAmine/zeavim.vim'
 
 " language
 "Plugin 'scrooloose/syntastic'
