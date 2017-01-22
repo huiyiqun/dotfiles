@@ -22,6 +22,7 @@ Plugin 'KabbAmine/zeavim.vim'
 
 " language
 "Plugin 'scrooloose/syntastic'
+Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sensible.git'
 Plugin 'pearofducks/ansible-vim'
@@ -133,3 +134,6 @@ set shell=sh
 
 " key bind for fswitch
 nmap <silent> <Leader>a :FSHere<cr>
+
+" key bind for clang-format
+nmap <silent> <Leader>f :ClangFormat<cr>
