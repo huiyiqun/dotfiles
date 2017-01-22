@@ -129,6 +129,6 @@ let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
 let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
 
 " set shell for elvish is not posix
-set shell=/usr/bin/sh
+set shell=sh
 
 nmap <silent> <Leader>a :FSHere<cr>
