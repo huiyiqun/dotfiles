@@ -131,4 +131,5 @@ let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
 " set shell for elvish is not posix
 set shell=sh
 
+" key bind for fswitch
 nmap <silent> <Leader>a :FSHere<cr>
