@@ -19,6 +19,7 @@ Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'KabbAmine/zeavim.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " language
 "Plugin 'scrooloose/syntastic'
@@ -137,3 +138,6 @@ nmap <silent> <Leader>a :FSHere<cr>
 
 " key bind for clang-format
 nmap <silent> <Leader>f :ClangFormat<cr>
+
+" fix https://github.com/neovim/neovim/issues/2048
+nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
