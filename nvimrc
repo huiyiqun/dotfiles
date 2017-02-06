@@ -122,6 +122,7 @@ let g:ycm_filetype_blacklist = {
     \ 'html' : 1,
     \}
 
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
 
