@@ -153,5 +153,3 @@ let g:ycm_semantic_triggers.tex = [
             \ 're!\\includepdf(\s*\[[^]]*\])?\s*\{[^}]*',
             \ 're!\\includestandalone(\s*\[[^]]*\])?\s*\{[^}]*',
             \ ]
-
-let g:vimtex_latexmk_options = '-pdf -verbose -file-line-error -synctex=1 -interaction=nonstopmode -xelatex'
