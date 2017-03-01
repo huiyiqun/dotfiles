@@ -14,6 +14,7 @@ Plugin 'edkolev/tmuxline.vim'
 " util
 Plugin 'vim-scripts/Drawit'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
@@ -138,6 +139,9 @@ nmap <silent> <Leader>a :FSHere<cr>
 
 " key bind for clang-format
 nmap <silent> <Leader>f :ClangFormat<cr>
+
+" key bind for nerd tree
+nmap <silent> <Leader>t :NERDTreeToggle<cr>
 
 " use vimtex with ycm
 if !exists('g:ycm_semantic_triggers')
