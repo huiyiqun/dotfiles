@@ -158,3 +158,6 @@ let g:ycm_semantic_triggers.tex = [
             \ 're!\\includepdf(\s*\[[^]]*\])?\s*\{[^}]*',
             \ 're!\\includestandalone(\s*\[[^]]*\])?\s*\{[^}]*',
             \ ]
+
+" setup table mode
+autocmd FileType markdown let g:table_mode_corner='|'
