@@ -20,6 +20,7 @@ Plugin 'vim-scripts/fcitx.vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'KabbAmine/zeavim.vim'
+Plugin 'dhruvasagar/vim-table-mode'
 
 " language
 "Plugin 'scrooloose/syntastic'
