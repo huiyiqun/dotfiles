@@ -163,3 +163,6 @@ let g:ycm_semantic_triggers.tex = [
 
 " setup table mode
 autocmd FileType markdown let g:table_mode_corner='|'
+
+" highlight column 80
+set colorcolumn=80
