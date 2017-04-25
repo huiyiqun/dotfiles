@@ -41,6 +41,7 @@ Plugin 'huiyiqun/elvish.vim'
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'lervag/vimtex'
+Plugin 'GutenYe/json5.vim'
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
