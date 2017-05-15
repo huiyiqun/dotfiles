@@ -45,3 +45,6 @@ alias vim=nvim
 # Configuration for golang
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
+
+# Homebrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
