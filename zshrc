@@ -44,7 +44,7 @@ alias pac="sudo pacman"
 alias yat="yaourt"
 function up {
     # Archlinux only
-    (( $+commands[yaourt] )) && yaourt -Syua --noconfirm
+    (( $+commands[yaourt] )) && yaourt -Syua --noconfirm --devel
 
     # oh-my-zsh
     upgrade_oh_my_zsh
