@@ -46,6 +46,9 @@ function up {
     # Archlinux only
     (( $+commands[yaourt] )) && yaourt -Syua --noconfirm --devel
 
+    # Macbook only
+    (( $+commands[brew] )) && brew upgrade
+
     # oh-my-zsh
     upgrade_oh_my_zsh
 
