@@ -24,6 +24,9 @@ plugins=(git tmux systemd)
 
 # User configuration
 
+# current directory
+DOTFILES=${${(%):-%N}:A:h}
+
 source $HOME/.path.local || true
 
 source $ZSH/oh-my-zsh.sh
@@ -41,13 +44,16 @@ alias pac="sudo pacman"
 alias yat="yaourt"
 function up {
     # Archlinux only
-    (( $+commands[yaourt] )) && yaourt -Syua --noconfirm --devel
+    (( $+commands[yaourt] )) && yaourt -Syua --noconfirm
 
     # oh-my-zsh
     upgrade_oh_my_zsh
 
     # tmux
     ~/.tmux/plugins/tpm/bindings/install_plugins
+
+    # dotfiles
+    git -C $DOTFILES pull
 }
 alias vim=nvim
 
@@ -59,5 +65,4 @@ export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 # LSCOLORS
-DOTFILES=${${(%):-%N}:A:h}
 (( $+commands[dirname] )) && eval $(dircolors $DOTFILES/dircolors/dircolors.256dark)
