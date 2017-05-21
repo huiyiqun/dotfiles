@@ -39,7 +39,16 @@ export PATH=$HOME/bin:$HOME/miniconda3/bin:$PATH
 # Aliases
 alias pac="sudo pacman"
 alias yat="yaourt"
-alias up="yaourt -Syua --noconfirm --devel"
+function up {
+    # Archlinux only
+    (( $+commands[yaourt] )) && yaourt -Syua --noconfirm --devel
+
+    # oh-my-zsh
+    upgrade_oh_my_zsh
+
+    # tmux
+    ~/.tmux/plugins/tpm/bindings/install_plugins
+}
 alias vim=nvim
 
 # Configuration for golang
