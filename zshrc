@@ -20,6 +20,9 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_TMUX_AUTOSTART=true
 TERM=screen-256color
 
+# https://github.com/robbyrussell/oh-my-zsh/issues/5765
+COMPLETION_WAITING_DOTS=false
+
 plugins=(git tmux systemd)
 
 # User configuration
