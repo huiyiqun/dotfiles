@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="ys"
+ZSH_THEME="wedisagree"
 
 # No update
 DISABLE_AUTO_UPDATE="true"
@@ -21,7 +21,7 @@ ZSH_TMUX_AUTOSTART=true
 TERM=screen-256color
 
 # https://github.com/robbyrussell/oh-my-zsh/issues/5765
-COMPLETION_WAITING_DOTS=false
+#COMPLETION_WAITING_DOTS=false
 
 plugins=(git tmux systemd scd)
 
