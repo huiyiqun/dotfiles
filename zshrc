@@ -71,4 +71,4 @@ export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 # LSCOLORS
-(( $+commands[dirname] )) && eval $(dircolors $DOTFILES/dircolors/dircolors.256dark)
+(( $+commands[dircolors] )) && eval $(dircolors $DOTFILES/dircolors/dircolors.256dark)
