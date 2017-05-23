@@ -74,3 +74,5 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bott
 for cmd in dircolors gdircolors; do
     (( $+commands[$cmd] )) && eval $($cmd $DOTFILES/dircolors/dircolors.256dark)
 done
+
+(( $+commands[cowsay] )) && (( $+commands[fortune] )) && (( $+commands[lolcat] )) && fortune | cowsay | lolcat
