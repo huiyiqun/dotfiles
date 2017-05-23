@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="wedisagree"
+ZSH_THEME="afowler"
 
 # No update
 DISABLE_AUTO_UPDATE="true"
