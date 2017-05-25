@@ -56,7 +56,7 @@ function up {
     upgrade_oh_my_zsh
 
     # tmux
-    ~/.tmux/plugins/tpm/bindings/install_plugins
+    ~/.tmux/plugins/tpm/bin/update_plugins all
 
     # dotfiles
     git -C $DOTFILES pull
