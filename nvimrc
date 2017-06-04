@@ -43,6 +43,7 @@ Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'lervag/vimtex'
 Plugin 'GutenYe/json5.vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
