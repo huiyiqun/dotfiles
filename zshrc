@@ -75,4 +75,5 @@ for cmd in dircolors gdircolors; do
     (( $+commands[$cmd] )) && eval $($cmd $DOTFILES/dircolors/dircolors.256dark)
 done
 
-(( $+commands[cowsay] )) && (( $+commands[fortune] )) && (( $+commands[lolcat] )) && fortune | cowsay | lolcat
+words=$( (( $+commands[fortune] )) && fortune || echo '苟利国家生死以，岂因祸福避趋之。')
+(( $+commands[tunasay] )) && (( $+commands[lolcat] )) && tunasay -o 30 -f tuna -W 8 "$words" | lolcat
