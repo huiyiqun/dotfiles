@@ -14,6 +14,7 @@ Plugin 'edkolev/tmuxline.vim'
 " util
 Plugin 'vim-scripts/Drawit'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mbbill/fencview'
 Plugin 'vim-scripts/fcitx.vim'
