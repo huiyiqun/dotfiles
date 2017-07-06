@@ -58,6 +58,9 @@ function up {
     # tmux
     ~/.tmux/plugins/tpm/bin/update_plugins all
 
+    # vundle plugins
+    (( $+commands[nvim] )) && nvim +PluginInstall! +qa
+
     # dotfiles
     git -C $DOTFILES pull
 }
