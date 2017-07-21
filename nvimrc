@@ -121,7 +121,9 @@ set shiftwidth=4
 let g:ycm_path_to_python_interpreter = "python3"
 
 " key bind for YCM
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>g :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>G :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>F :YcmCompleter FixIt<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
 
 " disable YCM for specific filetype
