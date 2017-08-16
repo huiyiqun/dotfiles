@@ -25,6 +25,7 @@ Plugin 'dhruvasagar/vim-table-mode'
 
 " language
 "Plugin 'scrooloose/syntastic'
+Plugin 'tshirtman/vim-cython'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sensible.git'
