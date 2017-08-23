@@ -30,7 +30,7 @@ plugins=(git tmux systemd scd)
 # current directory
 DOTFILES=${${(%):-%N}:A:h}
 
-source $HOME/.path.local || true
+source $HOME/.zshrc.local || true
 
 source $ZSH/oh-my-zsh.sh
 
