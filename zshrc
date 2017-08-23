@@ -52,6 +52,9 @@ function up {
     # Macbook only
     (( $+commands[brew] )) && brew upgrade
 
+    # dotfiles
+    git -C $DOTFILES pull
+
     # oh-my-zsh
     upgrade_oh_my_zsh
 
@@ -60,9 +63,6 @@ function up {
 
     # vundle plugins
     (( $+commands[nvim] )) && nvim +PluginInstall! +qa
-
-    # dotfiles
-    git -C $DOTFILES pull
 }
 alias vim=nvim
 
