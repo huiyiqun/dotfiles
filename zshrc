@@ -52,6 +52,9 @@ function up {
     # Macbook only
     (( $+commands[brew] )) && brew upgrade
 
+    # Ubuntu only
+    (( $+commands[apt-get] )) && sudo apt update && sudo apt upgrade
+
     # dotfiles
     git -C $DOTFILES pull
 
