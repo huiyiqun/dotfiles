@@ -53,7 +53,7 @@ function up {
     (( $+commands[brew] )) && brew upgrade
 
     # Ubuntu only
-    (( $+commands[apt-get] )) && sudo apt update && sudo apt upgrade
+    (( $+commands[apt-get] )) && sudo apt-get update && sudo apt-get -y upgrade
 
     # dotfiles
     git -C $DOTFILES pull
