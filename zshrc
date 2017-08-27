@@ -67,7 +67,7 @@ function up {
     # vundle plugins
     (( $+commands[nvim] )) && nvim +PluginInstall! +qa
 }
-alias vim=nvim
+(( $+commands[nvim] )) && alias vim=nvim
 
 # Configuration for golang
 export GOPATH=~/go
