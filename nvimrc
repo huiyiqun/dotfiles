@@ -8,7 +8,8 @@ call vundle#begin('~/.config/nvim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 
 " style
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 
 " util
