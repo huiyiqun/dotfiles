@@ -157,3 +157,6 @@ autocmd FileType markdown let g:table_mode_corner='|'
 
 " highlight column 80
 set colorcolumn=80
+
+" setup closetag
+let g:closetag_filenames = '*.html,*.vue'
