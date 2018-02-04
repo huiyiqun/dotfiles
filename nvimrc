@@ -30,7 +30,6 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'alvan/vim-closetag.git'
 Plugin 'fatih/vim-go'
 
 " config
