@@ -69,6 +69,9 @@ function up {
 }
 (( $+commands[nvim] )) && alias vim=nvim
 
+# Workaround the issue that emulator must be executed at $ANDROID_HOME/tools
+function emulator { cd $ANDROID_HOME/tools && ./emulator "$@" }
+
 # Configuration for golang
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
