@@ -26,12 +26,14 @@ Plugin 'dhruvasagar/vim-table-mode'
 
 " language
 Plugin 'sheerun/vim-polyglot'
-Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'alvan/vim-closetag.git'
 Plugin 'fatih/vim-go'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
@@ -55,6 +57,9 @@ filetype plugin indent on    " required
 
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
+
+" For vim-codefmt from Google
+call glaive#Install()
 
 " run SyntasticCheck check every time I write a file
 "autocmd BufWritePost * call SyntasticCheck()
@@ -132,7 +137,7 @@ set shell=sh
 nmap <silent> <Leader>a :FSHere<cr>
 
 " key bind for clang-format
-nmap <silent> <Leader>f :ClangFormat<cr>
+nmap <silent> <Leader>f :FormatCode<cr>
 
 " key bind for nerd tree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
@@ -160,3 +165,16 @@ set colorcolumn=80
 
 " setup closetag
 let g:closetag_filenames = '*.html,*.vue'
+
+" automatically format code
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+augroup END
