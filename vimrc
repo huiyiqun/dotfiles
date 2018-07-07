@@ -16,9 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 
 " style
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'
+Plugin 'romainl/Apprentice'
 
 " util
 Plugin 'vim-scripts/Drawit'
@@ -186,3 +184,6 @@ augroup autoformat_settings
   autocmd FileType python AutoFormatBuffer yapf
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 augroup END
+
+" select colorscheme
+colorscheme apprentice
