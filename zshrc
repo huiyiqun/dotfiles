@@ -1,3 +1,6 @@
+# Path to Powerline
+export POWERLINE_PATH=$(python -m inspect -d powerline | grep -Po "Submodule search path: \['\K[^']*")
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -86,5 +89,5 @@ done
 words=$( (( $+commands[fortune] )) && fortune || echo '苟利国家生死以，岂因祸福避趋之。')
 (( $+commands[tunasay] )) && (( $+commands[lolcat] )) && tunasay -o 30 -f tuna -W 8 "$words" | lolcat
 
-POWERLINE_ZSH=/usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+POWERLINE_ZSH=$POWERLINE_PATH/bindings/zsh/powerline.zsh
 [[ -a $POWERLINE_ZSH ]] && . $POWERLINE_ZSH
