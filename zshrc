@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Editor
-export EDITOR='nvim'
+export EDITOR='vim'
 
 export PATH=$HOME/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
 
@@ -65,9 +65,8 @@ function up {
     ~/.tmux/plugins/tpm/bin/update_plugins all
 
     # vundle plugins
-    (( $+commands[nvim] )) && nvim +PluginInstall! +qa
+    (( $+commands[vim] )) && vim +PluginInstall! +qa
 }
-(( $+commands[nvim] )) && alias vim=nvim
 
 # Workaround the issue that emulator must be executed at $ANDROID_HOME/tools
 function emulator { cd $ANDROID_HOME/tools && ./emulator "$@" }
@@ -86,3 +85,6 @@ done
 
 words=$( (( $+commands[fortune] )) && fortune || echo '苟利国家生死以，岂因祸福避趋之。')
 (( $+commands[tunasay] )) && (( $+commands[lolcat] )) && tunasay -o 30 -f tuna -W 8 "$words" | lolcat
+
+POWERLINE_ZSH=/usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+[[ -a $POWERLINE_ZSH ]] && . $POWERLINE_ZSH

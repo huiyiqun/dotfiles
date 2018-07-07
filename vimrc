@@ -1,15 +1,23 @@
+set encoding=utf-8
+
+" set python version for powerline
+let g:powerline_pycmd="py3"
+
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle/')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/bundle/')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" basic
+Plugin 'tpope/vim-sensible'
+
 " style
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 
 " util
@@ -56,7 +64,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Enable powerline fonts for airline
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " For vim-codefmt from Google
 call glaive#Install()
@@ -64,7 +72,7 @@ call glaive#Install()
 " run SyntasticCheck check every time I write a file
 "autocmd BufWritePost * call SyntasticCheck()
 
-source ~/.nvimrc.local
+source ~/.vimrc.local
 
 " show line number
 set number

@@ -23,5 +23,3 @@
 	smtpServerPort = 587
 [color]
 	ui = auto
-[core]
-	editor = nvim
