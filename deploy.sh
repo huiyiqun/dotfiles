@@ -18,5 +18,5 @@ ln -sf $CWD/zshrc ~/.zshrc && touch ~/.zshrc.local
 #ln -sf $CWD/ycm_extra_conf.py ~/.ycm_extra_conf.py
 ln -sf $CWD/vimrc ~/.vimrc && touch ~/.vimrc.local
 ln -sf $CWD/npmrc ~/.npmrc
-ln -sf $CWD/ssh_config ~/.ssh/config && mkdir -p ~/.ssh/cp
+ln -sf $CWD/ssh_config ~/.ssh/config && mkdir -p ~/.ssh/cp && touch ~/.ssh/local
 mkdir -p ~/.pip && ln -sf $CWD/pip.conf ~/.pip/pip.conf

@@ -1,3 +1,5 @@
+Include local
+
 Host *
     TCPKeepAlive yes
     ServerAliveInterval 15
