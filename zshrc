@@ -43,7 +43,7 @@ export LANG=en_US.UTF-8
 # Editor
 export EDITOR='vim'
 
-export PATH=$HOME/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
 
 # Aliases
 alias pac="sudo pacman"
