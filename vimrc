@@ -17,6 +17,7 @@ Plugin 'tpope/vim-sensible'
 
 " style
 Plugin 'romainl/Apprentice'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " util
 Plugin 'vim-scripts/Drawit'
