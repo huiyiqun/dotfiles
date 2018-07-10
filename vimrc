@@ -41,6 +41,7 @@ Plugin 'fatih/vim-go'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
+Plugin 'chen3feng/typhoon-blade', {'rtp': 'vim'}
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
@@ -188,3 +189,6 @@ augroup END
 
 " select colorscheme
 colorscheme apprentice
+
+" disable blade in plolyglot, which is not what I want
+let g:polyglot_disabled = ['blade']
