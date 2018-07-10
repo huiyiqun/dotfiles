@@ -20,3 +20,4 @@ ln -sf $CWD/vimrc ~/.vimrc && touch ~/.vimrc.local
 ln -sf $CWD/npmrc ~/.npmrc
 ln -sf $CWD/ssh_config ~/.ssh/config && mkdir -p ~/.ssh/cp && touch ~/.ssh/local
 mkdir -p ~/.pip && ln -sf $CWD/pip.conf ~/.pip/pip.conf
+mkdir -p ~/.ipython/profile_default && ln -sf $CWD/ipython_config.py ~/.ipython/profile_default/ipython_config.py
