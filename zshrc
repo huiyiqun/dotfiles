@@ -1,3 +1,12 @@
+# Editor
+export EDITOR='vim'
+
+# Path
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
+
+# Hotfix for MacOS
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
 # Path to Powerline
 export POWERLINE_PATH=$(python -m inspect -d powerline | grep -Po "Submodule search path: \['\K[^']*")
 
@@ -39,11 +48,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Language environment
 export LANG=en_US.UTF-8
-
-# Editor
-export EDITOR='vim'
-
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
 
 # Aliases
 alias pac="sudo pacman"
