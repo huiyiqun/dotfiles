@@ -7,6 +7,9 @@ export PATH=$HOME/bin:$HOME/.local/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbi
 # Hotfix for MacOS
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
+# Language environment
+export LANG=en_US.UTF-8
+
 # Path to Powerline
 export POWERLINE_PATH=$(python -m inspect -d powerline | grep -Po "Submodule search path: \['\K[^']*")
 
@@ -45,9 +48,6 @@ DOTFILES=${${(%):-%N}:A:h}
 source $HOME/.zshrc.local || true
 
 source $ZSH/oh-my-zsh.sh
-
-# Language environment
-export LANG=en_US.UTF-8
 
 # Aliases
 alias pac="sudo pacman"
