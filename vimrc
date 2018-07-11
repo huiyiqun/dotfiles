@@ -131,7 +131,7 @@ let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:syntastic_go_checkers = ['go', 'gofmt', 'govet']
 
 " configure nerdcommenter
-let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' } }
+let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' }, 'blade': { 'left': '#' } }
 
 " set shell for elvish is not posix
 set shell=sh
