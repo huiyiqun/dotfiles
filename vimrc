@@ -40,6 +40,7 @@ Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'alvan/vim-closetag.git'
 Plugin 'fatih/vim-go'
 Plugin 'chen3feng/typhoon-blade', {'rtp': 'vim'}
+Plugin 'chemzqm/wxapp.vim'
 
 " config
 Plugin 'editorconfig/editorconfig-vim'
