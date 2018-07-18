@@ -66,7 +66,7 @@ function up {
     (( $+commands[emerge] )) && emerge -uDU --keep-going --with-bdeps=y @world
 
     # dotfiles
-    git -C $DOTFILES pull
+    git -C $DOTFILES pull && $DOTFILES/deploy.sh
 
     # oh-my-zsh
     upgrade_oh_my_zsh
