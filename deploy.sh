@@ -9,7 +9,10 @@ test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.
 test -d ~/.oh-my-zsh || git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # install vundle
-test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# install vim-plug
+PLUG_VIM="$HOME/.vim/autoload/plug.vim"
+test -f $PLUG_VIM || curl -fLo $PLUG_VIM --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # link configurations
 ln -sf $CWD/tmux.conf ~/.tmux.conf && touch ~/.tmux.local.conf

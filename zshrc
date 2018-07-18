@@ -74,8 +74,8 @@ function up {
     # tmux
     ~/.tmux/plugins/tpm/bin/update_plugins all
 
-    # vundle plugins
-    (( $+commands[vim] )) && vim +PluginInstall! +qa
+    # vim plugins
+    (( $+commands[vim] )) && vim +PlugUpdate +qa
 }
 
 # Workaround the issue that emulator must be executed at $ANDROID_HOME/tools

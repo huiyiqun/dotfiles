@@ -1,72 +1,43 @@
-set encoding=utf-8
-
 " set python version for powerline
 let g:powerline_pycmd="py3"
 
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/bundle/')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/bundle/')
 
 " basic
-Plugin 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 
 " style
-Plugin 'romainl/Apprentice'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'romainl/Apprentice'
+Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " util
-Plugin 'vim-scripts/Drawit'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mbbill/fencview'
-Plugin 'vim-scripts/fcitx.vim'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'derekwyatt/vim-fswitch'
-Plugin 'KabbAmine/zeavim.vim'
-Plugin 'dhruvasagar/vim-table-mode'
+Plug 'vim-scripts/Drawit'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdtree'
+Plug 'mbbill/fencview'
+Plug 'vim-scripts/fcitx.vim'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'derekwyatt/vim-fswitch'
+Plug 'KabbAmine/zeavim.vim'
+Plug 'dhruvasagar/vim-table-mode'
 
 " language
-Plugin 'sheerun/vim-polyglot'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'alvan/vim-closetag.git'
-Plugin 'fatih/vim-go'
-Plugin 'chen3feng/typhoon-blade', {'rtp': 'vim'}
-Plugin 'chemzqm/wxapp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'rhysd/vim-clang-format'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/syntastic'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'alvan/vim-closetag'
+Plug 'fatih/vim-go'
+Plug 'chen3feng/typhoon-blade', {'rtp': 'vim'}
+Plug 'chemzqm/wxapp.vim'
 
 " config
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'embear/vim-localvimrc'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'embear/vim-localvimrc'
 
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" Enable powerline fonts for airline
-"let g:airline_powerline_fonts = 1
-
-" run SyntasticCheck check every time I write a file
-"autocmd BufWritePost * call SyntasticCheck()
+call plug#end()            " required
 
 source ~/.vimrc.local
 
