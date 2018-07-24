@@ -18,7 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'mbbill/fencview'
 Plug 'vim-scripts/fcitx.vim'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-Plug 'derekwyatt/vim-fswitch'
+Plug 'vim-scripts/a.vim'
 Plug 'KabbAmine/zeavim.vim'
 Plug 'dhruvasagar/vim-table-mode'
 
@@ -111,8 +111,8 @@ let g:NERDCustomDelimiters = { 'elvish': { 'left': '#' }, 'blade': { 'left': '#'
 " set shell for elvish is not posix
 set shell=sh
 
-" key bind for fswitch
-nmap <silent> <Leader>a :FSHere<cr>
+" key bind for a.vim
+nmap <silent> <Leader>a :A<cr>
 
 " key bind for codefmt
 Glaive codefmt plugin[mappings]
