@@ -116,6 +116,7 @@ nmap <silent> <Leader>a :FSHere<cr>
 
 " key bind for codefmt
 Glaive codefmt plugin[mappings]
+nmap <silent> <Leader>f :CodeFormat<cr>
 
 " key bind for nerd tree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
