@@ -24,7 +24,9 @@ Plug 'dhruvasagar/vim-table-mode'
 
 " language
 Plug 'sheerun/vim-polyglot'
-Plug 'rhysd/vim-clang-format'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-glaive'
+Plug 'google/vim-codefmt'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/syntastic'
 Plug 'artur-shaik/vim-javacomplete2'
@@ -38,6 +40,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'embear/vim-localvimrc'
 
 call plug#end()            " required
+
+call glaive#Install()
 
 source ~/.vimrc.local
 
@@ -81,9 +85,8 @@ map j gj
 map k gk
 
 " configuration about tab
-set expandtab
-set tabstop=4
-set shiftwidth=4
+setlocal expandtab tabstop=4 shiftwidth=4
+autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2
 
 let g:ycm_path_to_python_interpreter = "python3"
 
@@ -111,8 +114,8 @@ set shell=sh
 " key bind for fswitch
 nmap <silent> <Leader>a :FSHere<cr>
 
-" key bind for clang-format
-nmap <silent> <Leader>f :ClangFormat<cr>
+" key bind for codefmt
+Glaive codefmt plugin[mappings]
 
 " key bind for nerd tree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
