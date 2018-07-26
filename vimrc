@@ -84,10 +84,6 @@ autocmd BufReadPost *
 map j gj
 map k gk
 
-" configuration about tab
-setlocal expandtab tabstop=4 shiftwidth=4
-autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2
-
 let g:ycm_path_to_python_interpreter = "python3"
 
 " key bind for YCM
