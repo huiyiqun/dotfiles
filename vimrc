@@ -4,7 +4,7 @@ let g:powerline_pycmd="py3"
 call plug#begin('~/.vim/bundle/')
 
 " basic
-Plug 'tpope/vim-sensible'
+Plug 'sheerun/vimrc'
 
 " style
 Plug 'romainl/Apprentice'
