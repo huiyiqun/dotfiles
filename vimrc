@@ -1,6 +1,10 @@
 " Force UTF-8
 set encoding=utf-8
 
+" Default configuration about tab
+setlocal expandtab tabstop=4 shiftwidth=4
+autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2
+
 " set python version for powerline
 let g:powerline_pycmd="py3"
 
