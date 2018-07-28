@@ -1,3 +1,6 @@
+" Force UTF-8
+set encoding=utf-8
+
 " set python version for powerline
 let g:powerline_pycmd="py3"
 
@@ -60,9 +63,6 @@ let mapleader = ","
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_java_javac_config_file_enabled = 1
-
-" keep an undo file (undo changes after closing)
-set undofile
 
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
@@ -139,10 +139,42 @@ autocmd FileType markdown let g:table_mode_corner='|'
 set colorcolumn=80
 
 " setup closetag
-let g:closetag_filenames = '*.html,*.vue'
+let g:closetag_filenames = '*.html,*.vue,*.wxml'
 
 " select colorscheme
 colorscheme apprentice
 
 " disable blade in plolyglot, which is not what I want
 let g:polyglot_disabled = ['blade']
+
+" Show the size of block one selected in visual mode.
+set showcmd
+
+" Enable backup and undo files by default.
+let s:dir = has('win32') ? '$APPDATA/Vim' : isdirectory($HOME.'/Library') ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
+let &backupdir = expand(s:dir) . '/backup//'
+let &undodir = expand(s:dir) . '/undo//'
+if !isdirectory(expand(s:dir))
+  call system("mkdir -p " . expand(s:dir) . "/{backup,undo}")
+end
+set undofile
+
+" Highlight line under cursor. It helps with navigation.
+set cursorline
+
+" Keep 8 lines above or below the cursor when scrolling.
+set scrolloff=8
+
+" Disable any annoying beeps on errors.
+set noerrorbells
+set visualbell
+
+" Enable mouse for scrolling and window resizing.
+set mouse=a
+
+" Enable search highlighting.
+set hlsearch
+
+" Auto center on matched string.
+noremap n nzz
+noremap N Nzz
