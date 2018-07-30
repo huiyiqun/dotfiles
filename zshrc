@@ -56,7 +56,7 @@ function up {
     (( $+commands[yay] )) && yay -Syua --noconfirm --devel
 
     # Macbook only
-    (( $+commands[brew] )) && brew upgrade
+    (( $+commands[brew] )) && brew upgrade && brew cask upgrade
 
     # Ubuntu only
     (( $+commands[apt-get] )) && sudo apt-get update && sudo apt-get -y upgrade
