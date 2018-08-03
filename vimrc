@@ -118,6 +118,9 @@ nmap <silent> <Leader>a :A<cr>
 Glaive codefmt plugin[mappings]
 nmap <silent> <Leader>f :FormatCode<cr>
 
+" Using Google's C++ style guide
+Glaive codefmt clang_format_style='Google'
+
 " key bind for nerd tree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
 
