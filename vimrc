@@ -184,3 +184,6 @@ set hlsearch
 " Auto center on matched string.
 noremap n nzz
 noremap N Nzz
+
+" Too slow
+let g:syntastic_dart_checkers = []
