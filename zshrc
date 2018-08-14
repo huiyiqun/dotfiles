@@ -78,7 +78,7 @@ function up {
 }
 
 # Workaround the issue that emulator must be executed at $ANDROID_HOME/tools
-function emulator { cd $ANDROID_HOME/tools && ./emulator "$@" }
+function emulator { (cd $ANDROID_HOME/tools && ./emulator "$@") }
 
 # Configuration for golang
 export GOPATH=~/go
