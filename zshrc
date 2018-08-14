@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 alias pac="sudo pacman"
 function up {
     # Archlinux only
-    (( $+commands[yay] )) && yay -Syua --noconfirm --devel
+    (( $+commands[yay] )) && yay -Syu --noconfirm --devel
 
     # Macbook only
     (( $+commands[brew] )) && brew upgrade && brew cask upgrade
