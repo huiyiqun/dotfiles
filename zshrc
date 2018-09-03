@@ -62,7 +62,7 @@ function up {
     (( $+commands[apt-get] )) && sudo apt-get update && sudo apt-get -y upgrade
 
     # Gentoo only
-    (( $+commands[emerge] )) && emerge -uDU --keep-going --with-bdeps=y @world
+    (( $+commands[emerge] )) && emerge --sync && emerge -uDU --keep-going --with-bdeps=y @world
 
     # dotfiles
     git -C $DOTFILES pull && $DOTFILES/deploy.sh
