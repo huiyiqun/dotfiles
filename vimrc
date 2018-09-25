@@ -40,6 +40,7 @@ Plug 'alvan/vim-closetag'
 Plug 'fatih/vim-go'
 Plug 'chen3feng/typhoon-blade', {'rtp': 'vim'}
 Plug 'chemzqm/wxapp.vim'
+Plug 'tomlion/vim-solidity'
 
 " config
 Plug 'editorconfig/editorconfig-vim'
