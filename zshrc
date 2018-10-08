@@ -1,3 +1,5 @@
+zmodload zsh/curses
+
 # Editor
 export EDITOR='vim'
 
@@ -38,7 +40,7 @@ TERM=screen-256color
 # https://github.com/robbyrussell/oh-my-zsh/issues/5765
 #COMPLETION_WAITING_DOTS=false
 
-plugins=(git tmux systemd scd)
+plugins=(git tmux systemd scd zsh-navigation-tools)
 
 # User configuration
 
