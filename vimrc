@@ -29,6 +29,7 @@ Plug 'KabbAmine/zeavim.vim'
 Plug 'dhruvasagar/vim-table-mode'
 
 " language
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-glaive'
