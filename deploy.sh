@@ -8,6 +8,9 @@ test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.
 # install oh_my_zsh
 test -d ~/.oh-my-zsh || git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
+# install ccls
+test -d ~/.ccls || git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/.ccls && cmake ~/.ccls -B~/.ccls/Release -DLLVM_ENABLE_RTTI=on -DCMAKE_PREFIX_PATH="$(llvm-config --prefix)" && cmake --build ~/.ccls/Release
+
 # install vundle
 #test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # install vim-plug
