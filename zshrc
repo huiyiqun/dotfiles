@@ -4,7 +4,7 @@ zmodload zsh/curses
 export EDITOR='vim'
 
 # Path
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
 
 # Hotfix for MacOS
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
