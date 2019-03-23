@@ -138,10 +138,10 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " key bind for goto with Coc.nvim
-nnoremap <leader>g <Plug>(coc-definition)
-nnoremap <leader>G <Plug>(coc-implementation)
-nnoremap <leader>F <Plug>(coc-fix-current)
-nnoremap <leader>r <Plug>(coc-references)
+nmap <silent> <leader>g <Plug>(coc-definition)
+nmap <silent> <leader>G <Plug>(coc-implementation)
+nmap <silent> <leader>F <Plug>(coc-fix-current)
+nmap <silent> <leader>r <Plug>(coc-references)
 
 " key bind for a.vim
 nmap <silent> <Leader>a :A<cr>
