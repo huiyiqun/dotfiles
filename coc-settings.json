@@ -11,6 +11,12 @@
 					"completion": {}
 				}
 			}
+		},
+		"kotlin": {
+			"command": "kotlin-language-server",
+			"args": [],
+			"filetypes": ["kotlin"],
+			"rootPatterns": ["pom.xml"]
 		}
 	}
 }
