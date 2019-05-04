@@ -4,7 +4,7 @@ zmodload zsh/curses
 export EDITOR='vim'
 
 # Path
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
+export PATH=$HOME/.pub-cache/bin:$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/miniconda3/bin:$PATH:/usr/local/sbin
 
 # Hotfix for MacOS
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
@@ -88,6 +88,10 @@ export PATH=$GOPATH/bin:$PATH
 
 # Homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+# Flutter and Dart
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub/"
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 
 # LSCOLORS
 for cmd in dircolors gdircolors; do
