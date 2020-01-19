@@ -1,7 +1,7 @@
 {
 	"languageserver": {
 		"dart": {
-			"command": "dart_language_server",
+			"command": "pub global run dart_language_server:dart_language_server",
 			"args": [],
 			"filetypes": ["dart"],
 			"initializationOptions": {},
