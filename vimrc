@@ -31,7 +31,7 @@ Plug 'alvan/vim-closetag'
 " language
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
+Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
 "Plug 'artur-shaik/vim-javacomplete2'
 "Plug 'fatih/vim-go'
 "Plug 'chen3feng/typhoon-blade', {'rtp': 'vim'}
