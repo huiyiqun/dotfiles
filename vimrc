@@ -44,8 +44,6 @@ Plug 'embear/vim-localvimrc'
 
 call plug#end()            " required
 
-source ~/.vimrc.local
-
 " show line number
 set number
 
@@ -154,3 +152,5 @@ nnoremap <silent> <Leader>s  :<C-u>CocList -I symbols<cr>
 
 " key bind for diagnostic
 nnoremap <silent> <Leader>d  :<C-u>CocList diagnostics<cr>
+
+source ~/.vimrc.local
