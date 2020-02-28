@@ -1,22 +1,48 @@
 {
-	"languageserver": {
-		"dart": {
-			"command": "pub global run dart_language_server:dart_language_server",
-			"args": [],
-			"filetypes": ["dart"],
-			"initializationOptions": {},
-			"settings": {
-				"dart": {
-					"validation": {},
-					"completion": {}
-				}
-			}
-		},
-		"kotlin": {
-			"command": "kotlin-language-server",
-			"args": [],
-			"filetypes": ["kotlin"],
-			"rootPatterns": ["pom.xml"]
-		}
-	}
+  "languageserver": {
+    "dart": {
+      "command": "pub global run dart_language_server:dart_language_server",
+      "args": [],
+      "filetypes": [
+        "dart"
+      ],
+      "initializationOptions": {},
+      "settings": {
+        "dart": {
+          "validation": {},
+          "completion": {}
+        }
+      }
+    },
+    "kotlin": {
+      "command": "kotlin-language-server",
+      "args": [],
+      "filetypes": [
+        "kotlin"
+      ],
+      "rootPatterns": [
+        "pom.xml"
+      ]
+    },
+    "ccls": {
+      "command": "~/.ccls/Release/ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
 }
