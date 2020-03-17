@@ -11,7 +11,7 @@ test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.
 test -d ~/.oh-my-zsh || git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # install ccls
-test -d ~/.ccls || git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/.ccls && cmake ~/.ccls -B~/.ccls/Release -DLLVM_ENABLE_RTTI="$([[ "$(llvm-config --has-rtti)" = "YES" ]] && echo -n "on" || echo -n "off")" -DCMAKE_PREFIX_PATH="$(llvm-config --prefix)" && cmake --build ~/.ccls/Release && ln -sf ~/.ccls/Release/ccls ~/bin/ccls
+test -d ~/.ccls || git clone --depth=1 --recursive --shallow-submodules https://github.com/MaskRay/ccls ~/.ccls && cmake ~/.ccls -B~/.ccls/Release -DLLVM_ENABLE_RTTI="$([[ "$(llvm-config --has-rtti)" = "YES" ]] && echo -n "on" || echo -n "off")" -DCMAKE_PREFIX_PATH="$(llvm-config --prefix)" && cmake --build ~/.ccls/Release && ln -sf ~/.ccls/Release/ccls ~/bin/ccls
 
 # install vundle
 #test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -29,4 +29,5 @@ ln -sf $CWD/npmrc ~/.npmrc
 ln -sf $CWD/ssh_config ~/.ssh/config && mkdir -p ~/.ssh/cp && touch ~/.ssh/local
 ln -sf $CWD/coc-settings.json ~/.vim/
 mkdir -p ~/.pip && ln -sf $CWD/pip.conf ~/.pip/pip.conf
+mkdir -p ~/.config && ln -sf $CWD/powerline ~/.config/
 #mkdir -p ~/.ipython/profile_default && ln -sf $CWD/ipython_config.py ~/.ipython/profile_default/ipython_config.py
