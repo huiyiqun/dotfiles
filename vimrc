@@ -14,7 +14,7 @@ Plug 'tpope/vim-sensible'
 
 " style
 Plug 'romainl/Apprentice'
-Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'powerline/powerline', {'branch': 'develop', 'rtp': 'powerline/bindings/vim/'}
 
 " util
 Plug 'vim-scripts/Drawit'
@@ -121,8 +121,6 @@ set mouse=a
 
 " Enable search highlighting.
 set hlsearch
-
-set statusline+=%{coc#status()}
 
 " Auto center on matched string.
 noremap n nzz
