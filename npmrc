@@ -1,2 +1,3 @@
 loglevel=info
 progress=false
+prefix=~/.npm/prefix/
