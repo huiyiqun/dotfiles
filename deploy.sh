@@ -11,7 +11,8 @@ test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.
 test -d ~/.oh-my-zsh || git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # install ccls
-test -d ~/.ccls || git clone --depth=1 --recursive --shallow-submodules https://github.com/MaskRay/ccls ~/.ccls && cmake ~/.ccls -B~/.ccls/Release -DLLVM_ENABLE_RTTI="$([[ "$(llvm-config --has-rtti)" = "YES" ]] && echo -n "on" || echo -n "off")" -DCMAKE_PREFIX_PATH="$(llvm-config --prefix)" && cmake --build ~/.ccls/Release && ln -sf ~/.ccls/Release/ccls ~/bin/ccls
+# not to install ccls manually as it has been included in gentoo and archlinux, enough
+#test -d ~/.ccls || git clone --depth=1 --recursive --shallow-submodules https://github.com/MaskRay/ccls ~/.ccls && cmake ~/.ccls -B~/.ccls/Release -DLLVM_ENABLE_RTTI="$([[ "$(llvm-config --has-rtti)" = "YES" ]] && echo -n "on" || echo -n "off")" -DCMAKE_PREFIX_PATH="$(llvm-config --prefix)" && cmake --build ~/.ccls/Release && ln -sf ~/.ccls/Release/ccls ~/bin/ccls
 
 # install vundle
 #test -d ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

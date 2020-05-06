@@ -25,7 +25,7 @@
       ]
     },
     "ccls": {
-      "command": "~/.ccls/Release/ccls",
+      "command": "ccls",
       "filetypes": [
         "c",
         "cpp",
