@@ -80,6 +80,7 @@ set shell=sh
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
 
 " setup table mode
+let g:table_mode_header_fillchar='='
 autocmd FileType markdown let g:table_mode_corner='|'
 
 " highlight column 80
@@ -143,7 +144,9 @@ nmap <silent> <leader>r <Plug>(coc-references)
 nmap <silent> <Leader>a :A<cr>
 
 " key bind for formating
-nmap <silent> <Leader>f :call CocAction('format')<cr>
+nmap <silent> <Leader>f <Plug>(coc-format)
+vmap <silent> f <Plug>(coc-format-selected)
+nmap <silent> f <Plug>(coc-format-selected)
 
 " key bind for searching
 nnoremap <silent> <Leader>s  :<C-u>CocList -I symbols<cr>
